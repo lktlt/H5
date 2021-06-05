@@ -1,0 +1,200 @@
+body {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-style: -apple-system,helvetica,sans-serif;
+    line-height: 1.5;
+    color: #666;
+}
+/* 清除高亮 */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+/* 清除ios系统默认的按钮和输入框的样式 */
+input {
+    -webkit-appearance: none;
+}
+/* 禁用长按页面时弹出的菜单 */
+img,
+a {
+    -webkit-touch-callout: none;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+img {
+    /* 去除图片底部的空白缝隙 */
+    vertical-align: middle;
+}
+
+.app {
+    height: 45px;
+}
+.app li {
+    float: left;
+    height: 45px;
+    text-align: center;
+    color: white;
+    line-height: 45px;
+    background-color: #333333;
+}
+.app ul li:nth-child(1) {
+    width: 8%;
+    
+} 
+.app ul li:nth-child(1) img{
+    width: 10px;
+}
+.app ul li:nth-child(2) {
+    width: 10%;
+    vertical-align: middle;
+}
+.app ul li:nth-child(2) img{
+    width: 30px;
+    /* 对于块级元素（如图片）和文字基线对齐，有line-height=height，还需要加 vertical-align: middle; */
+    vertical-align: middle;
+}
+.app ul li:nth-child(3) {
+    width: 57%;
+}
+.app ul li:nth-child(4) {
+    width: 25%;
+    background-color: #F63515;
+} 
+
+/* 搜索 */
+.search-wrap {
+    /* .search 有7px的上外边距，发生外边距合并，给父级加  overflow: hidden;*/
+    overflow: hidden;
+    /* 固定定位 */
+    position: fixed;
+    /* 固定定位的盒子必须有宽度。再设置最大最小宽度 */
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    height: 44px;
+}
+.search-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 44px;
+}
+.search-btn::before {
+    content: "";
+    /* 行内元素 */
+    display: block;
+    width: 20px;
+    height: 18px;
+    margin: 14px 0 0 15px;
+    background: url(../images/s-btn.png) no-repeat;
+    background-size: 20px 18px;
+}
+.search-login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+}
+.search {
+    position: relative;
+    height: 30px;
+    margin: 7px 50px 0;
+    border-radius: 15px;
+    background-color: white;
+}
+.search .jd-icon {
+    position: absolute;
+    top: 8px;
+    left: 13px;
+    width: 20px;
+    height: 15px;
+    background: url(../images/jd.png) no-repeat;
+    background-size: 20px 15px;
+}
+.search .jd-icon::after {
+    content:"";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+}
+.sou {
+    position: absolute;
+    top: 8px;
+    left: 50px;
+    width: 18px;
+    height: 15px;
+    background: url(../images/jd-sprites.png) no-repeat -82px 0;
+    background-size: 200px auto;
+}
+.slider img {
+    width: 100%;
+}
+.brand {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;    
+}
+.brand div{
+    float: left;
+    width: 33.3%;
+}
+.brand div img{
+    width: 100%;
+}
+
+/* nav */
+nav {
+    margin-top: 5px;
+}
+nav a {
+    /* 有浮动、定位不需要手动转换为块元素 */
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+nav a img {
+    width: 40px;
+    margin: 10px 0;
+}
+nav a span {
+    display: block;
+}
+
+/* news */
+
+.news img {
+/* 需要让图的大小缩放为父级a的代销 */
+    width: 100%;
+}
+.news a {
+    float: left;
+    /* 用C3盒子模型，将a的边框算进去 */
+    box-sizing: border-box;
+
+    margin-top: 20px;
+
+}
+.news a:nth-child(1) {
+    width: 50%;
+
+}
+.news a:nth-child(n+2) {
+    width: 25%;
+    border-left: 1px solid #ccc;
+}
