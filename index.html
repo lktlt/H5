@@ -4,121 +4,220 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- 视口标签修改 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0
     maximum-scale=1.0, minimum-scale=1.0">
-    <title>Document</title>
-    <!-- 引入初始化CSS -->
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- 引入首页css -->
     <link rel="stylesheet" href="css/index.css">
+
+    <title>携程旅行</title>
 
 </head>
 
 <body>
-    <!-- 顶部 start -->
-    <header class="app">
-        <ul>
-            <li>
-                <img src="images/close.png" alt="">
-            </li>
-            <li>
-                <img src="images/logo.png" alt="">
-            </li>
-            <li>打开京东App，购物更轻松</li>
-            <li>立即打开</li>
-        </ul>
-    </header>
-    <!-- 顶部 end -->
+    <!-- 搜索模块 start-->
+    <section class="section-index">
+        <div class="search">搜索：目的地/酒店/景点/航班号</div>
+        <a href="#" class="user">
+            <span>我 的</span>
+        </a>
+    </section>
+    <!-- 搜索模块 end-->
 
-    <!-- 搜索 start -->
-    <div class="search-wrap">
-        <div class="search-btn"></div>
-        <div class="search">
-            <div class="jd-icon"></div>
-            <div class="sou"></div>
-        </div>
-
-        <div class="search-login">登录</div>
+    <!-- 焦点图模块 start-->
+    <div class="focus">
+        <img src="upload/focus.jpg" alt="">
     </div>
-    <!-- 搜索 end -->
+    <!-- 焦点图模块 end-->
 
-    <!-- 主体内容 start-->
-    <div class="main-content">
-        <!-- 滑动图 -->
-        <div class="slider">
-            <img src="upload/banner.dpg" alt="">
-        </div>
-        <!-- 品牌日 -->
-        <div class="brand">
-            <div>
-                <a href="#"><img src="upload/pic11.dpg" alt=""></a>
-            </div>
-            <div>
-                <a href="#"><img src="upload/pic22.dpg" alt=""></a>
-            </div>
-            <div>
-                <a href="#"><img src="upload/pic33.dpg" alt=""></a>
-            </div>
-        </div>
-        <!-- nav -->
-        <nav>
-            <a href="#">
-                <img src="upload/nav1.webp" alt="">
-                <span>京东超市</span>
+    <!-- 导航模块 start-->
+    <ul class="local-nav">
+        <li>
+            <a href="#" title="景点*玩乐">
+                <span class="icon-local-scenic1"></span>
+                <span>景点*玩乐</span>
             </a>
+        </li>
+        <li>
             <a href="#">
-                <img src="upload/nav2.webp" alt="">
-                <span>全球购</span>
+                <span class="icon-local-scenic2"></span>
+                <span>周边游</span>
             </a>
+        </li>
+        <li>
             <a href="#">
-                <img src="upload/nav3.webp" alt="">
-                <span>京东服饰</span>
+                <span class="icon-local-scenic3"></span>
+                <span>美食林</span>
             </a>
+        </li>
+        <li>
             <a href="#">
-                <img src="upload/nav1.webp" alt="">
-                <span>京东超市</span>
+                <span class="icon-local-scenic4"></span>
+                <span>一日游</span>
             </a>
+        </li>
+        <li>
             <a href="#">
-                <img src="upload/nav2.webp" alt="">
-                <span>全球购</span>
+                <span class="icon-local-scenic5"></span>
+                <span>当地攻略</span>
             </a>
-            <a href="#">
-                <img src="upload/nav3.webp" alt="">
-                <span>京东服饰</span>
-            </a>
-            <a href="#">
-                <img src="upload/nav1.webp" alt="">
-                <span>京东超市</span>
-            </a>
-            <a href="#">
-                <img src="upload/nav2.webp" alt="">
-                <span>全球购</span>
-            </a>
-            <a href="#">
-                <img src="upload/nav3.webp" alt="">
-                <span>京东服饰</span>
-            </a>
-            <a href="#">
-                <img src="upload/nav1.webp" alt="">
-                <span>京东超市</span>
-            </a>
+        </li>
+    </ul>
+    <!-- 导航模块 end-->
 
-        </nav>
-        <!-- 新闻快报 -->
-        <div class="news">
+    <!-- 主导航模块 start-->
+    <nav class="nav">
+        <div class="nav-commmon">
+            <div class="nav-items">
+                <a href="#" title="酒店">酒店</a>
+            </div>
+            <div class="nav-items">
+                <a href="#">海外酒店</a>
+                <a href="#">特价酒店</a>
+            </div>
+            <div class="nav-items">
+                <a href="#">团购</a>
+                <a href="#">民宿·客栈</a>
+            </div>
+        </div>
+        <div class="nav-commmon">
+            <div class="nav-items">
+                <a href="#" title="机票">机票</a>
+            </div>
+            <div class="nav-items">
+                <a href="#">火车票</a>
+                <a href="#">特价机票</a>
+            </div>
+            <div class="nav-items">
+                <a href="#">汽车票·船票</a>
+                <a href="#">专车·租车</a>
+            </div>
+        </div>
+        <div class="nav-commmon">
+            <div class="nav-items">
+                <a href="#" title="旅游">旅游</a>
+            </div>
+            <div class="nav-items">
+                <a href="#">门票</a>
+                <a href="#">目的地攻略</a>
+            </div>
+            <div class="nav-items">
+                <a href="#">邮轮旅游</a>
+                <a href="#">定制旅行</a>
+            </div>
+        </div>
+    </nav>
+    <!-- 主导航模块 end-->
+
+    <!-- 侧导航模块 start-->
+    <ul class="subnav-entry">
+        <li>
             <a href="#">
-                <img src="upload/new1.dpg" alt="">
+                <span class="subnav-entry-icon1"></span>
+                <span>电话卡</span>
             </a>
+        </li>
+        <li>
             <a href="#">
-                <img src="upload/new2.dpg" alt="">
+                <span class="subnav-entry-icon2"></span>
+                <span>电话卡</span>
             </a>
+        </li>
+        <li>
             <a href="#">
-                <img src="upload/new3.dpg" alt="">
+                <span class="subnav-entry-icon3"></span>
+                <span>电话卡</span>
             </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="subnav-entry-icon4"></span>
+                <span>电话卡</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="subnav-entry-icon5"></span>
+                <span>电话卡</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="subnav-entry-icon6"></span>
+                <span>电话卡</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="subnav-entry-icon7"></span>
+                <span>电话卡</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="subnav-entry-icon8"></span>
+                <span>电话卡</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="subnav-entry-icon9"></span>
+                <span>电话卡</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="subnav-entry-icon10"></span>
+                <span>电话卡</span>
+            </a>
+        </li>
+    </ul>
+    <!-- 侧导航模块 end-->
+
+    <!-- 销售模块 start-->
+    <div class="sales-box">
+        <div class="sales-hd">
+            <h2>热门活动</h2>
+            <a href="#" class="more">获取更多福利</a>
+        </div>
+        <div class="sales-bd">
+            <div class="row">
+                <a href="#"><img src="upload/pic1.jpg" alt=""></a>
+                <a href="#"><img src="upload/pic2.jpg" alt=""></a>
+            </div>
+            <div class="row">
+                <a href="#"><img src="upload/pic3.jpg" alt=""></a>
+                <a href="#"><img src="upload/pic4.jpg" alt=""></a>
+            </div>
+            <div class="row">
+                <a href="#"><img src="upload/pic5.jpg" alt=""></a>
+                <a href="#"><img src="upload/pic6.jpg" alt=""></a>
+            </div>
         </div>
     </div>
-    <!-- 主体内容 end-->
+    <!-- 销售模块 end-->
+
+    <!-- 尾部模块 start-->
+    <footer class="footer">
+        <a href="#">电话预定</a>
+        <a href="#">下载客户端</a>
+        <a href="#">我 的</a>
+    </footer>
+    <!-- 尾部模块 end-->
+
+    <!-- 版权模块 start-->
+    <div class="tool">
+        <div class="tool-link">
+            <a href="#">网站地图</a> |
+            <a href="#">@ language</a> |
+            <a href="#">电脑版</a>
+        </div>
+        <p>
+            ©
+            携程旅行
+            <span>| 沪ICP备08023580号</span>
+        </p>
+    </div>
+    <!-- 版权模块 end-->
 </body>
 
 </html>
